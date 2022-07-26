@@ -57,3 +57,21 @@ $ terraform plan
     env : dev or prod 
     Enter a value : 
 ```    
+
+
+# workspaces
+  - Deploy multiple Terraform environments on one system
+  - tfstate file stores the current environment details
+  - You cannot have more than one such file
+  - Creating workspaces will allow to have two environment simultaneously
+
+##  Creating Workspaces 
+
+  ```sh
+  $ terraform workspace new dev 
+  $ terraform workspace show 
+  $ terraform workspace list 
+  $ terraform workspace new prod 
+  $ terraform workspace select dev 
+  ```
+  
